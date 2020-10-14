@@ -30,8 +30,6 @@ contains
 
     function input_checker_real(input_str, input, value_str) result(ok)
 
-        use :: precision, only: rp
-
         implicit none
         character(*), intent(in) :: input_str
         real(rp), intent(out) :: input
@@ -55,8 +53,6 @@ contains
 
     function input_checker_integer(input_str, input, value_str) result(ok)
 
-        use :: precision, only: rp
-
         implicit none
         character(*), intent(in) :: input_str
         integer, intent(out) :: input
@@ -79,8 +75,6 @@ contains
     end function
 
     function input_checker_string(input_str, input, input_file, value_str) result(ok)
-
-        use :: precision, only: rp
 
         implicit none
         character(*), intent(in) :: input_str
